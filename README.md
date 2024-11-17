@@ -49,3 +49,36 @@ git clone <repository_url>
 cd <repository_folder>
 
 ### Build and Start Services
+docker-compose up --build -d
+
+### Verify Running Services
+docker-compose ps
+
+### Verify Running Services
+- Fetch All Records
+
+GET /data?pageno=<page_number>&pagesize=<page_size>&filter_key=<value>
+
+- Query Parameters :
+  - pageno: Page number for pagination.
+  - pagesize: Number of records per page.
+  - filter_key: Filter records by specific field (e.g., id, created_at, etc.).
+
+  {
+    "current_page": 1,
+    "pages": 4,
+    "tasks": [
+        {
+            "description": "single = Text can be written in a single line.",
+            "id": 1
+        },
+        {
+            "description": "multi = Text can also span multiple lines",
+            "id": 2
+        }
+    ],
+    "total": 8
+  }
+
+
+
