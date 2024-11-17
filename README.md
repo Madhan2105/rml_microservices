@@ -42,7 +42,7 @@ The services are connected via RabbitMQ for message brokering and PostgreSQL for
 - Docker and Docker Compose
 - PostgreSQL
 
-### Clone the Repository
+### Commands
 
 ```bash
 git clone <repository_url>
@@ -54,7 +54,7 @@ docker-compose up --build -d
 ### Verify Running Services
 docker-compose ps
 
-### Verify Running Services
+### API Collection
 - Fetch All Records
 
 GET /data?pageno=<page_number>&pagesize=<page_size>&filter_key=<value>
